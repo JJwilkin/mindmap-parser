@@ -1,0 +1,355 @@
+{
+  "name": "Operation Systems",
+  "slug": "operation-systems",
+  "description": "Comprehensive guide to operation systems, covering fundamental concepts, analysis techniques, and practical implementations",
+  "sections": [
+    {
+      "name": "Introduction to Operating Systems",
+      "number": "1",
+      "topics": [
+        {
+          "name": "OS Fundamentals",
+          "number": "1.1",
+          "concepts": [
+            {
+              "name": "What is an Operating System?",
+              "description": "Definition, role as an intermediary between user/hardware, and resource manager."
+            },
+            {
+              "name": "Kernel and User Mode",
+              "description": "Dual-mode operation for protection; privileged (kernel) vs. non-privileged (user) instructions."
+            },
+            {
+              "name": "System Calls",
+              "description": "The interface between user applications and the OS; how programs request services from the kernel."
+            },
+            {
+              "name": "Computer System Architecture",
+              "description": "Overview of CPUs, device controllers, buses, and how they interconnect."
+            }
+          ]
+        },
+        {
+          "name": "Operating System Structures",
+          "number": "1.2",
+          "concepts": [
+            {
+              "name": "Monolithic Architecture",
+              "description": "Simple structure where the entire OS runs as a single program in kernel mode."
+            },
+            {
+              "name": "Layered Architecture",
+              "description": "OS designed in hierarchical layers, each layer using functions of lower layers."
+            },
+            {
+              "name": "Microkernels",
+              "description": "Minimizes kernel, moving most services into user-space processes (servers)."
+            },
+            {
+              "name": "Modules (Loadable Kernel Modules)",
+              "description": "Modern approach using object-oriented techniques for a core kernel and loadable modules."
+            },
+            {
+              "name": "Virtual Machines",
+              "description": "Abstraction that mimics hardware to run multiple operating systems concurrently."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Process Management",
+      "number": "2",
+      "topics": [
+        {
+          "name": "Processes and Threads",
+          "number": "2.1",
+          "concepts": [
+            {
+              "name": "Process Concept",
+              "description": "Program in execution; includes text, data, stack, and Process Control Block (PCB)."
+            },
+            {
+              "name": "Process States",
+              "description": "Lifecycle of a process: new, ready, running, waiting, terminated."
+            },
+            {
+              "name": "Process Scheduling",
+              "description": "Scheduling queues (job, ready, device); context switching; schedulers (long, short, medium-term)."
+            },
+            {
+              "name": "Operations on Processes",
+              "description": "Process creation (fork, exec), termination, and waiting."
+            },
+            {
+              "name": "Interprocess Communication (IPC)",
+              "description": "Shared memory and message passing models for processes to communicate."
+            },
+            {
+              "name": "Threads (Concurrency Unit)",
+              "description": "Lightweight process; benefits of multithreading; user-level vs. kernel-level threads."
+            }
+          ]
+        },
+        {
+          "name": "CPU Scheduling",
+          "number": "2.2",
+          "concepts": [
+            {
+              "name": "Scheduling Criteria",
+              "description": "Metrics for evaluation: CPU utilization, throughput, turnaround time, waiting time, response time."
+            },
+            {
+              "name": "Scheduling Algorithms",
+              "description": "First-Come, First-Served (FCFS); Shortest-Job-First (SJF); Priority; Round-Robin (RR); Multilevel Queue."
+            },
+            {
+              "name": "Thread Scheduling",
+              "description": "Scheduling user and kernel threads; contention scope (process-local, system-global)."
+            },
+            {
+              "name": "Multi-Processor Scheduling",
+              "description": "Approaches for scheduling on systems with multiple CPUs; load balancing and affinity."
+            }
+          ]
+        },
+        {
+          "name": "Process Synchronization",
+          "number": "2.3",
+          "concepts": [
+            {
+              "name": "The Critical-Section Problem",
+              "description": "Code segment accessing shared data; requirements for a solution: mutual exclusion, progress, bounded waiting."
+            },
+            {
+              "name": "Hardware Synchronization",
+              "description": "Using atomic hardware instructions like TestAndSet() and Swap() to implement locks."
+            },
+            {
+              "name": "Semaphores",
+              "description": "Synchronization tool using integer variable and atomic wait() and signal() operations; counting and binary semaphores."
+            },
+            {
+              "name": "Classic Synchronization Problems",
+              "description": "Bounded-Buffer, Readers-Writers, and Dining Philosophers problems as examples."
+            }
+          ]
+        },
+        {
+          "name": "Deadlocks",
+          "number": "2.4",
+          "concepts": [
+            {
+              "name": "System Model and Characterization",
+              "description": "Necessary conditions for deadlock: mutual exclusion, hold and wait, no preemption, circular wait."
+            },
+            {
+              "name": "Methods for Handling Deadlocks",
+              "description": "Prevention, Avoidance (Banker's Algorithm), Detection, and Recovery."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Memory Management",
+      "number": "3",
+      "topics": [
+        {
+          "name": "Main Memory",
+          "number": "3.1",
+          "concepts": [
+            {
+              "name": "Address Binding",
+              "description": "Mapping logical addresses to physical addresses at compile, load, or execution time."
+            },
+            {
+              "name": "Logical vs. Physical Address Space",
+              "description": "Address generated by the CPU (logical) vs. address seen by the memory unit (physical)."
+            },
+            {
+              "name": "Dynamic Loading and Linking",
+              "description": "Loading routines only when called; linking at execution time."
+            },
+            {
+              "name": "Swapping",
+              "description": "Process moved temporarily out of main memory to a backing store and back in again."
+            },
+            {
+              "name": "Contiguous Memory Allocation",
+              "description": "Memory divided into partitions; variable-size partitions and fragmentation (external, internal)."
+            }
+          ]
+        },
+        {
+          "name": "Paging",
+          "number": "3.2",
+          "concepts": [
+            {
+              "name": "Basic Method",
+              "description": "Divide physical memory into fixed-size frames and logical memory into same-size pages."
+            },
+            {
+              "name": "Hardware Support (TLB)",
+              "description": "Translation Look-aside Buffer as a hardware cache for page tables to speed up address translation."
+            },
+            {
+              "name": "Protection and Sharing",
+              "description": "Using valid-invalid bits and protection bits in page table entries."
+            },
+            {
+              "name": "Structure of the Page Table",
+              "description": "Hierarchical Paging, Hashed Page Tables, Inverted Page Tables for large address spaces."
+            }
+          ]
+        },
+        {
+          "name": "Segmentation",
+          "number": "3.3",
+          "concepts": [
+            {
+              "name": "Basic Method",
+              "description": "Memory-management scheme that supports user's view of memory as a collection of segments (code, data, stack)."
+            },
+            {
+              "name": "Hardware (Segment Table)",
+              "description": "Mapping logical addresses consisting of segment number and offset to physical addresses."
+            }
+          ]
+        },
+        {
+          "name": "Virtual Memory",
+          "number": "3.4",
+          "concepts": [
+            {
+              "name": "Demand Paging",
+              "description": "Load pages into memory only when they are demanded (referenced); page fault handling."
+            },
+            {
+              "name": "Copy-on-Write",
+              "description": "Technique used during process creation (fork) to share pages until a write occurs."
+            },
+            {
+              "name": "Page Replacement",
+              "description": "Algorithms for selecting a victim page to swap out when a page fault occurs and no free frames exist (FIFO, Optimal, LRU)."
+            },
+            {
+              "name": "Allocation of Frames",
+              "description": "Equal, proportional, and priority-based allocation schemes; global vs. local replacement scope."
+            },
+            {
+              "name": "Thrashing",
+              "description": "High paging activity when a process spends more time paging than executing; working-set model as a solution."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Storage Management",
+      "number": "4",
+      "topics": [
+        {
+          "name": "File-System Interface",
+          "number": "4.1",
+          "concepts": [
+            {
+              "name": "File Concepts",
+              "description": "File attributes, operations, and types; logical file structures (record, byte sequences)."
+            },
+            {
+              "name": "Access Methods",
+              "description": "Sequential access and direct (random) access to files."
+            },
+            {
+              "name": "Directory Structure",
+              "description": "Organizing files into directories; single-level, two-level, tree-structured, and acyclic-graph directories."
+            },
+            {
+              "name": "File-System Mounting and Sharing",
+              "description": "Making a file system available for use; remote file systems (e.g., NFS)."
+            }
+          ]
+        },
+        {
+          "name": "File-System Implementation",
+          "number": "4.2",
+          "concepts": [
+            {
+              "name": "File-System Structure",
+              "description": "Layered design: application programs, logical file system, file-organization module, basic file system, I/O control."
+            },
+            {
+              "name": "Allocation Methods",
+              "description": "Contiguous, Linked, and Indexed allocation for tracking disk blocks used by a file."
+            },
+            {
+              "name": "Free-Space Management",
+              "description": "Bitmaps and linked lists to track free disk blocks."
+            },
+            {
+              "name": "Directory Implementation",
+              "description": "Linear list and hash table structures for storing directory entries."
+            }
+          ]
+        },
+        {
+          "name": "Mass-Storage Structure",
+          "number": "4.3",
+          "concepts": [
+            {
+              "name": "Disk Structure and Scheduling",
+              "description": "Physical structure of magnetic disks; scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK)."
+            },
+            {
+              "name": "Disk Management",
+              "description": "Disk formatting, boot blocks, and bad blocks."
+            },
+            {
+              "name": "RAID Structure",
+              "description": "Redundant Arrays of Inexpensive Disks for improved reliability and performance through redundancy and striping."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Protection and Security",
+      "number": "5",
+      "topics": [
+        {
+          "name": "System Protection",
+          "number": "5.1",
+          "concepts": [
+            {
+              "name": "Principles of Protection",
+              "description": "Domain of protection and access matrix model for controlling resource access."
+            },
+            {
+              "name": "Access Control",
+              "description": "Access-control lists (ACLs) and capability lists as implementations of the access matrix."
+            }
+          ]
+        },
+        {
+          "name": "System Security",
+          "number": "5.2",
+          "concepts": [
+            {
+              "name": "Security Problem",
+              "description": "Threats: malware, denial-of-service, breaches of confidentiality/integrity/availability."
+            },
+            {
+              "name": "Cryptography",
+              "description": "Basic principles of encryption (symmetric, asymmetric) and digital signatures for secure communication."
+            },
+            {
+              "name": "Authentication",
+              "description": "Verifying the identity of a user, process, or device (e.g., passwords, biometrics)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

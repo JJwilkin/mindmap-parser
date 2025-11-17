@@ -1,0 +1,2260 @@
+{
+  "name": "Operation Systems",
+  "slug": "operation-systems",
+  "description": "Comprehensive guide to operation systems, covering fundamental concepts, analysis techniques, and practical implementations",
+  "dots": [
+    {
+      "id": 1,
+      "size": 6,
+      "text": "Introduction to Operating Systems",
+      "parentId": null,
+      "details": "Introduction to Operating Systems - 1",
+      "fullContent": "Introduction to Operating Systems",
+      "implementations": [],
+      "relationships": [],
+      "connections": [],
+      "children": [
+        {
+          "id": 2,
+          "size": 4,
+          "text": "OS Fundamentals",
+          "parentId": 1,
+          "details": "OS Fundamentals - 1.1",
+          "fullContent": "OS Fundamentals",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 3,
+              "size": 3,
+              "text": "What is an Operating System?",
+              "parentId": 2,
+              "details": "Definition, role as an intermediary between user/hardware, and resource manager....",
+              "fullContent": "Definition, role as an intermediary between user/hardware, and resource manager.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                6,
+                4,
+                5,
+                8,
+                15,
+                17
+              ]
+            },
+            {
+              "id": 4,
+              "size": 3,
+              "text": "Kernel and User Mode",
+              "parentId": 2,
+              "details": "Dual-mode operation for protection; privileged (kernel) vs. non-privileged (user) instructions....",
+              "fullContent": "Dual-mode operation for protection; privileged (kernel) vs. non-privileged (user) instructions.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                3,
+                5,
+                8,
+                10,
+                15,
+                27
+              ]
+            },
+            {
+              "id": 5,
+              "size": 3,
+              "text": "System Calls",
+              "parentId": 2,
+              "details": "The interface between user applications and the OS; how programs request services from the kernel....",
+              "fullContent": "The interface between user applications and the OS; how programs request services from the kernel.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                3,
+                4,
+                8,
+                10,
+                15,
+                18
+              ]
+            },
+            {
+              "id": 6,
+              "size": 3,
+              "text": "Computer System Architecture",
+              "parentId": 2,
+              "details": "Overview of CPUs, device controllers, buses, and how they interconnect....",
+              "fullContent": "Overview of CPUs, device controllers, buses, and how they interconnect.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                3,
+                4,
+                12,
+                28,
+                67
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "size": 4,
+          "text": "Operating System Structures",
+          "parentId": 1,
+          "details": "Operating System Structures - 1.2",
+          "fullContent": "Operating System Structures",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 8,
+              "size": 3,
+              "text": "Monolithic Architecture",
+              "parentId": 7,
+              "details": "Simple structure where the entire OS runs as a single program in kernel mode....",
+              "fullContent": "Simple structure where the entire OS runs as a single program in kernel mode.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                9,
+                10,
+                11,
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "id": 9,
+              "size": 3,
+              "text": "Layered Architecture",
+              "parentId": 7,
+              "details": "OS designed in hierarchical layers, each layer using functions of lower layers....",
+              "fullContent": "OS designed in hierarchical layers, each layer using functions of lower layers.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                8,
+                10,
+                11,
+                62
+              ]
+            },
+            {
+              "id": 10,
+              "size": 3,
+              "text": "Microkernels",
+              "parentId": 7,
+              "details": "Minimizes kernel, moving most services into user-space processes (servers)....",
+              "fullContent": "Minimizes kernel, moving most services into user-space processes (servers).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                8,
+                9,
+                11,
+                5,
+                19
+              ]
+            },
+            {
+              "id": 11,
+              "size": 3,
+              "text": "Modules (Loadable Kernel Modules)",
+              "parentId": 7,
+              "details": "Modern approach using object-oriented techniques for a core kernel and loadable modules....",
+              "fullContent": "Modern approach using object-oriented techniques for a core kernel and loadable modules.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                8,
+                9,
+                10,
+                12,
+                38
+              ]
+            },
+            {
+              "id": 12,
+              "size": 3,
+              "text": "Virtual Machines",
+              "parentId": 7,
+              "details": "Abstraction that mimics hardware to run multiple operating systems concurrently....",
+              "fullContent": "Abstraction that mimics hardware to run multiple operating systems concurrently.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                6,
+                11,
+                4,
+                15,
+                70
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "size": 6,
+      "text": "Process Management",
+      "parentId": null,
+      "details": "Process Management - 2",
+      "fullContent": "Process Management",
+      "implementations": [],
+      "relationships": [],
+      "connections": [],
+      "children": [
+        {
+          "id": 14,
+          "size": 4,
+          "text": "Processes and Threads",
+          "parentId": 13,
+          "details": "Processes and Threads - 2.1",
+          "fullContent": "Processes and Threads",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 15,
+              "size": 3,
+              "text": "Process Concept",
+              "parentId": 14,
+              "details": "Program in execution; includes text, data, stack, and Process Control Block (PCB)....",
+              "fullContent": "Program in execution; includes text, data, stack, and Process Control Block (PCB).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                16,
+                17,
+                18,
+                20,
+                36
+              ]
+            },
+            {
+              "id": 16,
+              "size": 3,
+              "text": "Process States",
+              "parentId": 14,
+              "details": "Lifecycle of a process: new, ready, running, waiting, terminated....",
+              "fullContent": "Lifecycle of a process: new, ready, running, waiting, terminated.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                15,
+                17,
+                18,
+                20,
+                39
+              ]
+            },
+            {
+              "id": 17,
+              "size": 3,
+              "text": "Process Scheduling",
+              "parentId": 14,
+              "details": "Scheduling queues (job, ready, device); context switching; schedulers (long, short, medium-term)....",
+              "fullContent": "Scheduling queues (job, ready, device); context switching; schedulers (long, short, medium-term).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                15,
+                16,
+                23,
+                25,
+                24
+              ]
+            },
+            {
+              "id": 18,
+              "size": 3,
+              "text": "Operations on Processes",
+              "parentId": 14,
+              "details": "Process creation (fork, exec), termination, and waiting....",
+              "fullContent": "Process creation (fork, exec), termination, and waiting.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                15,
+                16,
+                19,
+                20,
+                51
+              ]
+            },
+            {
+              "id": 19,
+              "size": 3,
+              "text": "Interprocess Communication (IPC)",
+              "parentId": 14,
+              "details": "Shared memory and message passing models for processes to communicate....",
+              "fullContent": "Shared memory and message passing models for processes to communicate.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                18,
+                27,
+                29,
+                30,
+                20
+              ]
+            },
+            {
+              "id": 20,
+              "size": 3,
+              "text": "Threads (Concurrency Unit)",
+              "parentId": 14,
+              "details": "Lightweight process; benefits of multithreading; user-level vs. kernel-level threads....",
+              "fullContent": "Lightweight process; benefits of multithreading; user-level vs. kernel-level threads.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                15,
+                18,
+                19,
+                24,
+                27
+              ]
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "size": 4,
+          "text": "CPU Scheduling",
+          "parentId": 13,
+          "details": "CPU Scheduling - 2.2",
+          "fullContent": "CPU Scheduling",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 22,
+              "size": 3,
+              "text": "Scheduling Criteria",
+              "parentId": 21,
+              "details": "Metrics for evaluation: CPU utilization, throughput, turnaround time, waiting time, response time....",
+              "fullContent": "Metrics for evaluation: CPU utilization, throughput, turnaround time, waiting time, response time.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                23,
+                17,
+                21
+              ]
+            },
+            {
+              "id": 23,
+              "size": 3,
+              "text": "Scheduling Algorithms",
+              "parentId": 21,
+              "details": "First-Come, First-Served (FCFS); Shortest-Job-First (SJF); Priority; Round-Robin (RR); Multilevel Queue....",
+              "fullContent": "First-Come, First-Served (FCFS); Shortest-Job-First (SJF); Priority; Round-Robin (RR); Multilevel Queue.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                22,
+                17,
+                24,
+                25
+              ]
+            },
+            {
+              "id": 24,
+              "size": 3,
+              "text": "Thread Scheduling",
+              "parentId": 21,
+              "details": "Scheduling user and kernel threads; contention scope (process-local, system-global)....",
+              "fullContent": "Scheduling user and kernel threads; contention scope (process-local, system-global).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                20,
+                23,
+                25
+              ]
+            },
+            {
+              "id": 25,
+              "size": 3,
+              "text": "Multi-Processor Scheduling",
+              "parentId": 21,
+              "details": "Approaches for scheduling on systems with multiple CPUs; load balancing and affinity....",
+              "fullContent": "Approaches for scheduling on systems with multiple CPUs; load balancing and affinity.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                23,
+                24,
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "size": 4,
+          "text": "Process Synchronization",
+          "parentId": 13,
+          "details": "Process Synchronization - 2.3",
+          "fullContent": "Process Synchronization",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 27,
+              "size": 3,
+              "text": "The Critical-Section Problem",
+              "parentId": 26,
+              "details": "Code segment accessing shared data; requirements for a solution: mutual exclusion, progress, bounded waiting....",
+              "fullContent": "Code segment accessing shared data; requirements for a solution: mutual exclusion, progress, bounded waiting.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                26,
+                28,
+                29,
+                30
+              ]
+            },
+            {
+              "id": 28,
+              "size": 3,
+              "text": "Hardware Synchronization",
+              "parentId": 26,
+              "details": "Using atomic hardware instructions like TestAndSet() and Swap() to implement locks....",
+              "fullContent": "Using atomic hardware instructions like TestAndSet() and Swap() to implement locks.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                27,
+                29,
+                4
+              ]
+            },
+            {
+              "id": 29,
+              "size": 3,
+              "text": "Semaphores",
+              "parentId": 26,
+              "details": "Synchronization tool using integer variable and atomic wait() and signal() operations; counting and binary semaphores....",
+              "fullContent": "Synchronization tool using integer variable and atomic wait() and signal() operations; counting and binary semaphores.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                27,
+                28,
+                30
+              ]
+            },
+            {
+              "id": 30,
+              "size": 3,
+              "text": "Classic Synchronization Problems",
+              "parentId": 26,
+              "details": "Bounded-Buffer, Readers-Writers, and Dining Philosophers problems as examples....",
+              "fullContent": "Bounded-Buffer, Readers-Writers, and Dining Philosophers problems as examples.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                27,
+                29,
+                26
+              ]
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "size": 4,
+          "text": "Deadlocks",
+          "parentId": 13,
+          "details": "Deadlocks - 2.4",
+          "fullContent": "Deadlocks",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 32,
+              "size": 3,
+              "text": "System Model and Characterization",
+              "parentId": 31,
+              "details": "Necessary conditions for deadlock: mutual exclusion, hold and wait, no preemption, circular wait....",
+              "fullContent": "Necessary conditions for deadlock: mutual exclusion, hold and wait, no preemption, circular wait.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                31,
+                33,
+                27
+              ]
+            },
+            {
+              "id": 33,
+              "size": 3,
+              "text": "Methods for Handling Deadlocks",
+              "parentId": 31,
+              "details": "Prevention, Avoidance (Banker's Algorithm), Detection, and Recovery....",
+              "fullContent": "Prevention, Avoidance (Banker's Algorithm), Detection, and Recovery.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                31,
+                32
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "size": 6,
+      "text": "Memory Management",
+      "parentId": null,
+      "details": "Memory Management - 3",
+      "fullContent": "Memory Management",
+      "implementations": [],
+      "relationships": [],
+      "connections": [],
+      "children": [
+        {
+          "id": 35,
+          "size": 4,
+          "text": "Main Memory",
+          "parentId": 34,
+          "details": "Main Memory - 3.1",
+          "fullContent": "Main Memory",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 36,
+              "size": 3,
+              "text": "Address Binding",
+              "parentId": 35,
+              "details": "Mapping logical addresses to physical addresses at compile, load, or execution time....",
+              "fullContent": "Mapping logical addresses to physical addresses at compile, load, or execution time.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                37,
+                34,
+                35
+              ]
+            },
+            {
+              "id": 37,
+              "size": 3,
+              "text": "Logical vs. Physical Address Space",
+              "parentId": 35,
+              "details": "Address generated by the CPU (logical) vs. address seen by the memory unit (physical)....",
+              "fullContent": "Address generated by the CPU (logical) vs. address seen by the memory unit (physical).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                36,
+                34,
+                42
+              ]
+            },
+            {
+              "id": 38,
+              "size": 3,
+              "text": "Dynamic Loading and Linking",
+              "parentId": 35,
+              "details": "Loading routines only when called; linking at execution time....",
+              "fullContent": "Loading routines only when called; linking at execution time.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                34,
+                35,
+                50
+              ]
+            },
+            {
+              "id": 39,
+              "size": 3,
+              "text": "Swapping",
+              "parentId": 35,
+              "details": "Process moved temporarily out of main memory to a backing store and back in again....",
+              "fullContent": "Process moved temporarily out of main memory to a backing store and back in again.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                34,
+                35,
+                53
+              ]
+            },
+            {
+              "id": 40,
+              "size": 3,
+              "text": "Contiguous Memory Allocation",
+              "parentId": 35,
+              "details": "Memory divided into partitions; variable-size partitions and fragmentation (external, internal)....",
+              "fullContent": "Memory divided into partitions; variable-size partitions and fragmentation (external, internal).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                34,
+                35,
+                42
+              ]
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "size": 4,
+          "text": "Paging",
+          "parentId": 34,
+          "details": "Paging - 3.2",
+          "fullContent": "Paging",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 42,
+              "size": 3,
+              "text": "Basic Method",
+              "parentId": 41,
+              "details": "Divide physical memory into fixed-size frames and logical memory into same-size pages....",
+              "fullContent": "Divide physical memory into fixed-size frames and logical memory into same-size pages.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                36,
+                37,
+                40,
+                43
+              ]
+            },
+            {
+              "id": 43,
+              "size": 3,
+              "text": "Hardware Support (TLB)",
+              "parentId": 41,
+              "details": "Translation Look-aside Buffer as a hardware cache for page tables to speed up address translation....",
+              "fullContent": "Translation Look-aside Buffer as a hardware cache for page tables to speed up address translation.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                42,
+                45,
+                50
+              ]
+            },
+            {
+              "id": 44,
+              "size": 3,
+              "text": "Protection and Sharing",
+              "parentId": 41,
+              "details": "Using valid-invalid bits and protection bits in page table entries....",
+              "fullContent": "Using valid-invalid bits and protection bits in page table entries.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                42,
+                72,
+                73
+              ]
+            },
+            {
+              "id": 45,
+              "size": 3,
+              "text": "Structure of the Page Table",
+              "parentId": 41,
+              "details": "Hierarchical Paging, Hashed Page Tables, Inverted Page Tables for large address spaces....",
+              "fullContent": "Hierarchical Paging, Hashed Page Tables, Inverted Page Tables for large address spaces.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                42,
+                43
+              ]
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "size": 4,
+          "text": "Segmentation",
+          "parentId": 34,
+          "details": "Segmentation - 3.3",
+          "fullContent": "Segmentation",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 47,
+              "size": 3,
+              "text": "Basic Method",
+              "parentId": 46,
+              "details": "Memory-management scheme that supports user's view of memory as a collection of segments (code, data, stack)....",
+              "fullContent": "Memory-management scheme that supports user's view of memory as a collection of segments (code, data, stack).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                42,
+                48,
+                15
+              ]
+            },
+            {
+              "id": 48,
+              "size": 3,
+              "text": "Hardware (Segment Table)",
+              "parentId": 46,
+              "details": "Mapping logical addresses consisting of segment number and offset to physical addresses....",
+              "fullContent": "Mapping logical addresses consisting of segment number and offset to physical addresses.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                47,
+                42,
+                36,
+                37
+              ]
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "size": 4,
+          "text": "Virtual Memory",
+          "parentId": 34,
+          "details": "Virtual Memory - 3.4",
+          "fullContent": "Virtual Memory",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 50,
+              "size": 3,
+              "text": "Demand Paging",
+              "parentId": 49,
+              "details": "Load pages into memory only when they are demanded (referenced); page fault handling....",
+              "fullContent": "Load pages into memory only when they are demanded (referenced); page fault handling.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                42,
+                52,
+                39
+              ]
+            },
+            {
+              "id": 51,
+              "size": 3,
+              "text": "Copy-on-Write",
+              "parentId": 49,
+              "details": "Technique used during process creation (fork) to share pages until a write occurs....",
+              "fullContent": "Technique used during process creation (fork) to share pages until a write occurs.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                50,
+                18,
+                19
+              ]
+            },
+            {
+              "id": 52,
+              "size": 3,
+              "text": "Page Replacement",
+              "parentId": 49,
+              "details": "Algorithms for selecting a victim page to swap out when a page fault occurs and no free frames exist (FIFO, Optimal, LRU)....",
+              "fullContent": "Algorithms for selecting a victim page to swap out when a page fault occurs and no free frames exist (FIFO, Optimal, LRU).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                50,
+                53,
+                54
+              ]
+            },
+            {
+              "id": 53,
+              "size": 3,
+              "text": "Allocation of Frames",
+              "parentId": 49,
+              "details": "Equal, proportional, and priority-based allocation schemes; global vs. local replacement scope....",
+              "fullContent": "Equal, proportional, and priority-based allocation schemes; global vs. local replacement scope.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                50,
+                52,
+                17,
+                54
+              ]
+            },
+            {
+              "id": 54,
+              "size": 3,
+              "text": "Thrashing",
+              "parentId": 49,
+              "details": "High paging activity when a process spends more time paging than executing; working-set model as a solution....",
+              "fullContent": "High paging activity when a process spends more time paging than executing; working-set model as a solution.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                52,
+                53,
+                50
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "size": 6,
+      "text": "Storage Management",
+      "parentId": null,
+      "details": "Storage Management - 4",
+      "fullContent": "Storage Management",
+      "implementations": [],
+      "relationships": [],
+      "connections": [],
+      "children": [
+        {
+          "id": 56,
+          "size": 4,
+          "text": "File-System Interface",
+          "parentId": 55,
+          "details": "File-System Interface - 4.1",
+          "fullContent": "File-System Interface",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 57,
+              "size": 3,
+              "text": "File Concepts",
+              "parentId": 56,
+              "details": "File attributes, operations, and types; logical file structures (record, byte sequences)....",
+              "fullContent": "File attributes, operations, and types; logical file structures (record, byte sequences).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                58,
+                59,
+                62
+              ]
+            },
+            {
+              "id": 58,
+              "size": 3,
+              "text": "Access Methods",
+              "parentId": 56,
+              "details": "Sequential access and direct (random) access to files....",
+              "fullContent": "Sequential access and direct (random) access to files.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                57,
+                63,
+                67
+              ]
+            },
+            {
+              "id": 59,
+              "size": 3,
+              "text": "Directory Structure",
+              "parentId": 56,
+              "details": "Organizing files into directories; single-level, two-level, tree-structured, and acyclic-graph directories....",
+              "fullContent": "Organizing files into directories; single-level, two-level, tree-structured, and acyclic-graph directories.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                57,
+                60,
+                65
+              ]
+            },
+            {
+              "id": 60,
+              "size": 3,
+              "text": "File-System Mounting and Sharing",
+              "parentId": 56,
+              "details": "Making a file system available for use; remote file systems (e.g., NFS)....",
+              "fullContent": "Making a file system available for use; remote file systems (e.g., NFS).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                59,
+                12,
+                57
+              ]
+            }
+          ]
+        },
+        {
+          "id": 61,
+          "size": 4,
+          "text": "File-System Implementation",
+          "parentId": 55,
+          "details": "File-System Implementation - 4.2",
+          "fullContent": "File-System Implementation",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 62,
+              "size": 3,
+              "text": "File-System Structure",
+              "parentId": 61,
+              "details": "Layered design: application programs, logical file system, file-organization module, basic file system, I/O control....",
+              "fullContent": "Layered design: application programs, logical file system, file-organization module, basic file system, I/O control.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                61,
+                63,
+                64,
+                65,
+                57,
+                58
+              ]
+            },
+            {
+              "id": 63,
+              "size": 3,
+              "text": "Allocation Methods",
+              "parentId": 61,
+              "details": "Contiguous, Linked, and Indexed allocation for tracking disk blocks used by a file....",
+              "fullContent": "Contiguous, Linked, and Indexed allocation for tracking disk blocks used by a file.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                62,
+                64,
+                67,
+                42,
+                40
+              ]
+            },
+            {
+              "id": 64,
+              "size": 3,
+              "text": "Free-Space Management",
+              "parentId": 61,
+              "details": "Bitmaps and linked lists to track free disk blocks....",
+              "fullContent": "Bitmaps and linked lists to track free disk blocks.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                63,
+                67,
+                68,
+                40
+              ]
+            },
+            {
+              "id": 65,
+              "size": 3,
+              "text": "Directory Implementation",
+              "parentId": 61,
+              "details": "Linear list and hash table structures for storing directory entries....",
+              "fullContent": "Linear list and hash table structures for storing directory entries.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                59,
+                62,
+                45
+              ]
+            }
+          ]
+        },
+        {
+          "id": 66,
+          "size": 4,
+          "text": "Mass-Storage Structure",
+          "parentId": 55,
+          "details": "Mass-Storage Structure - 4.3",
+          "fullContent": "Mass-Storage Structure",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 67,
+              "size": 3,
+              "text": "Disk Structure and Scheduling",
+              "parentId": 66,
+              "details": "Physical structure of magnetic disks; scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK)....",
+              "fullContent": "Physical structure of magnetic disks; scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                23,
+                68,
+                69,
+                63
+              ]
+            },
+            {
+              "id": 68,
+              "size": 3,
+              "text": "Disk Management",
+              "parentId": 66,
+              "details": "Disk formatting, boot blocks, and bad blocks....",
+              "fullContent": "Disk formatting, boot blocks, and bad blocks.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                67,
+                69,
+                64
+              ]
+            },
+            {
+              "id": 69,
+              "size": 3,
+              "text": "RAID Structure",
+              "parentId": 66,
+              "details": "Redundant Arrays of Inexpensive Disks for improved reliability and performance through redundancy and striping....",
+              "fullContent": "Redundant Arrays of Inexpensive Disks for improved reliability and performance through redundancy and striping.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                67,
+                42
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "size": 6,
+      "text": "Protection and Security",
+      "parentId": null,
+      "details": "Protection and Security - 5",
+      "fullContent": "Protection and Security",
+      "implementations": [],
+      "relationships": [],
+      "connections": [],
+      "children": [
+        {
+          "id": 71,
+          "size": 4,
+          "text": "System Protection",
+          "parentId": 70,
+          "details": "System Protection - 5.1",
+          "fullContent": "System Protection",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 72,
+              "size": 3,
+              "text": "Principles of Protection",
+              "parentId": 71,
+              "details": "Domain of protection and access matrix model for controlling resource access....",
+              "fullContent": "Domain of protection and access matrix model for controlling resource access.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                73,
+                4,
+                44
+              ]
+            },
+            {
+              "id": 73,
+              "size": 3,
+              "text": "Access Control",
+              "parentId": 71,
+              "details": "Access-control lists (ACLs) and capability lists as implementations of the access matrix....",
+              "fullContent": "Access-control lists (ACLs) and capability lists as implementations of the access matrix.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                72,
+                75,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "id": 74,
+          "size": 4,
+          "text": "System Security",
+          "parentId": 70,
+          "details": "System Security - 5.2",
+          "fullContent": "System Security",
+          "implementations": [],
+          "relationships": [],
+          "connections": [],
+          "children": [
+            {
+              "id": 75,
+              "size": 3,
+              "text": "Security Problem",
+              "parentId": 74,
+              "details": "Threats: malware, denial-of-service, breaches of confidentiality/integrity/availability....",
+              "fullContent": "Threats: malware, denial-of-service, breaches of confidentiality/integrity/availability.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                76,
+                77,
+                72,
+                73
+              ]
+            },
+            {
+              "id": 76,
+              "size": 3,
+              "text": "Cryptography",
+              "parentId": 74,
+              "details": "Basic principles of encryption (symmetric, asymmetric) and digital signatures for secure communication....",
+              "fullContent": "Basic principles of encryption (symmetric, asymmetric) and digital signatures for secure communication.",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                77,
+                75
+              ]
+            },
+            {
+              "id": 77,
+              "size": 3,
+              "text": "Authentication",
+              "parentId": 74,
+              "details": "Verifying the identity of a user, process, or device (e.g., passwords, biometrics)....",
+              "fullContent": "Verifying the identity of a user, process, or device (e.g., passwords, biometrics).",
+              "implementations": [],
+              "relationships": [],
+              "connections": [
+                76,
+                75
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "paths": [],
+  "lines": {
+    "hierarchical": [
+      {
+        "source": 1,
+        "target": 2,
+        "type": "hierarchical"
+      },
+      {
+        "source": 2,
+        "target": 3,
+        "type": "hierarchical"
+      },
+      {
+        "source": 2,
+        "target": 4,
+        "type": "hierarchical"
+      },
+      {
+        "source": 2,
+        "target": 5,
+        "type": "hierarchical"
+      },
+      {
+        "source": 2,
+        "target": 6,
+        "type": "hierarchical"
+      },
+      {
+        "source": 1,
+        "target": 7,
+        "type": "hierarchical"
+      },
+      {
+        "source": 7,
+        "target": 8,
+        "type": "hierarchical"
+      },
+      {
+        "source": 7,
+        "target": 9,
+        "type": "hierarchical"
+      },
+      {
+        "source": 7,
+        "target": 10,
+        "type": "hierarchical"
+      },
+      {
+        "source": 7,
+        "target": 11,
+        "type": "hierarchical"
+      },
+      {
+        "source": 7,
+        "target": 12,
+        "type": "hierarchical"
+      },
+      {
+        "source": 13,
+        "target": 14,
+        "type": "hierarchical"
+      },
+      {
+        "source": 14,
+        "target": 15,
+        "type": "hierarchical"
+      },
+      {
+        "source": 14,
+        "target": 16,
+        "type": "hierarchical"
+      },
+      {
+        "source": 14,
+        "target": 17,
+        "type": "hierarchical"
+      },
+      {
+        "source": 14,
+        "target": 18,
+        "type": "hierarchical"
+      },
+      {
+        "source": 14,
+        "target": 19,
+        "type": "hierarchical"
+      },
+      {
+        "source": 14,
+        "target": 20,
+        "type": "hierarchical"
+      },
+      {
+        "source": 13,
+        "target": 21,
+        "type": "hierarchical"
+      },
+      {
+        "source": 21,
+        "target": 22,
+        "type": "hierarchical"
+      },
+      {
+        "source": 21,
+        "target": 23,
+        "type": "hierarchical"
+      },
+      {
+        "source": 21,
+        "target": 24,
+        "type": "hierarchical"
+      },
+      {
+        "source": 21,
+        "target": 25,
+        "type": "hierarchical"
+      },
+      {
+        "source": 13,
+        "target": 26,
+        "type": "hierarchical"
+      },
+      {
+        "source": 26,
+        "target": 27,
+        "type": "hierarchical"
+      },
+      {
+        "source": 26,
+        "target": 28,
+        "type": "hierarchical"
+      },
+      {
+        "source": 26,
+        "target": 29,
+        "type": "hierarchical"
+      },
+      {
+        "source": 26,
+        "target": 30,
+        "type": "hierarchical"
+      },
+      {
+        "source": 13,
+        "target": 31,
+        "type": "hierarchical"
+      },
+      {
+        "source": 31,
+        "target": 32,
+        "type": "hierarchical"
+      },
+      {
+        "source": 31,
+        "target": 33,
+        "type": "hierarchical"
+      },
+      {
+        "source": 34,
+        "target": 35,
+        "type": "hierarchical"
+      },
+      {
+        "source": 35,
+        "target": 36,
+        "type": "hierarchical"
+      },
+      {
+        "source": 35,
+        "target": 37,
+        "type": "hierarchical"
+      },
+      {
+        "source": 35,
+        "target": 38,
+        "type": "hierarchical"
+      },
+      {
+        "source": 35,
+        "target": 39,
+        "type": "hierarchical"
+      },
+      {
+        "source": 35,
+        "target": 40,
+        "type": "hierarchical"
+      },
+      {
+        "source": 34,
+        "target": 41,
+        "type": "hierarchical"
+      },
+      {
+        "source": 41,
+        "target": 42,
+        "type": "hierarchical"
+      },
+      {
+        "source": 41,
+        "target": 43,
+        "type": "hierarchical"
+      },
+      {
+        "source": 41,
+        "target": 44,
+        "type": "hierarchical"
+      },
+      {
+        "source": 41,
+        "target": 45,
+        "type": "hierarchical"
+      },
+      {
+        "source": 34,
+        "target": 46,
+        "type": "hierarchical"
+      },
+      {
+        "source": 46,
+        "target": 47,
+        "type": "hierarchical"
+      },
+      {
+        "source": 46,
+        "target": 48,
+        "type": "hierarchical"
+      },
+      {
+        "source": 34,
+        "target": 49,
+        "type": "hierarchical"
+      },
+      {
+        "source": 49,
+        "target": 50,
+        "type": "hierarchical"
+      },
+      {
+        "source": 49,
+        "target": 51,
+        "type": "hierarchical"
+      },
+      {
+        "source": 49,
+        "target": 52,
+        "type": "hierarchical"
+      },
+      {
+        "source": 49,
+        "target": 53,
+        "type": "hierarchical"
+      },
+      {
+        "source": 49,
+        "target": 54,
+        "type": "hierarchical"
+      },
+      {
+        "source": 55,
+        "target": 56,
+        "type": "hierarchical"
+      },
+      {
+        "source": 56,
+        "target": 57,
+        "type": "hierarchical"
+      },
+      {
+        "source": 56,
+        "target": 58,
+        "type": "hierarchical"
+      },
+      {
+        "source": 56,
+        "target": 59,
+        "type": "hierarchical"
+      },
+      {
+        "source": 56,
+        "target": 60,
+        "type": "hierarchical"
+      },
+      {
+        "source": 55,
+        "target": 61,
+        "type": "hierarchical"
+      },
+      {
+        "source": 61,
+        "target": 62,
+        "type": "hierarchical"
+      },
+      {
+        "source": 61,
+        "target": 63,
+        "type": "hierarchical"
+      },
+      {
+        "source": 61,
+        "target": 64,
+        "type": "hierarchical"
+      },
+      {
+        "source": 61,
+        "target": 65,
+        "type": "hierarchical"
+      },
+      {
+        "source": 55,
+        "target": 66,
+        "type": "hierarchical"
+      },
+      {
+        "source": 66,
+        "target": 67,
+        "type": "hierarchical"
+      },
+      {
+        "source": 66,
+        "target": 68,
+        "type": "hierarchical"
+      },
+      {
+        "source": 66,
+        "target": 69,
+        "type": "hierarchical"
+      },
+      {
+        "source": 70,
+        "target": 71,
+        "type": "hierarchical"
+      },
+      {
+        "source": 71,
+        "target": 72,
+        "type": "hierarchical"
+      },
+      {
+        "source": 71,
+        "target": 73,
+        "type": "hierarchical"
+      },
+      {
+        "source": 70,
+        "target": 74,
+        "type": "hierarchical"
+      },
+      {
+        "source": 74,
+        "target": 75,
+        "type": "hierarchical"
+      },
+      {
+        "source": 74,
+        "target": 76,
+        "type": "hierarchical"
+      },
+      {
+        "source": 74,
+        "target": 77,
+        "type": "hierarchical"
+      }
+    ],
+    "connections": [
+      {
+        "source": 3,
+        "target": 6,
+        "type": "connection"
+      },
+      {
+        "source": 3,
+        "target": 4,
+        "type": "connection"
+      },
+      {
+        "source": 3,
+        "target": 5,
+        "type": "connection"
+      },
+      {
+        "source": 3,
+        "target": 8,
+        "type": "connection"
+      },
+      {
+        "source": 3,
+        "target": 15,
+        "type": "connection"
+      },
+      {
+        "source": 3,
+        "target": 17,
+        "type": "connection"
+      },
+      {
+        "source": 4,
+        "target": 5,
+        "type": "connection"
+      },
+      {
+        "source": 4,
+        "target": 8,
+        "type": "connection"
+      },
+      {
+        "source": 4,
+        "target": 10,
+        "type": "connection"
+      },
+      {
+        "source": 4,
+        "target": 15,
+        "type": "connection"
+      },
+      {
+        "source": 4,
+        "target": 27,
+        "type": "connection"
+      },
+      {
+        "source": 5,
+        "target": 8,
+        "type": "connection"
+      },
+      {
+        "source": 5,
+        "target": 10,
+        "type": "connection"
+      },
+      {
+        "source": 5,
+        "target": 15,
+        "type": "connection"
+      },
+      {
+        "source": 5,
+        "target": 18,
+        "type": "connection"
+      },
+      {
+        "source": 6,
+        "target": 4,
+        "type": "connection"
+      },
+      {
+        "source": 6,
+        "target": 12,
+        "type": "connection"
+      },
+      {
+        "source": 6,
+        "target": 28,
+        "type": "connection"
+      },
+      {
+        "source": 6,
+        "target": 67,
+        "type": "connection"
+      },
+      {
+        "source": 8,
+        "target": 9,
+        "type": "connection"
+      },
+      {
+        "source": 8,
+        "target": 10,
+        "type": "connection"
+      },
+      {
+        "source": 8,
+        "target": 11,
+        "type": "connection"
+      },
+      {
+        "source": 9,
+        "target": 10,
+        "type": "connection"
+      },
+      {
+        "source": 9,
+        "target": 11,
+        "type": "connection"
+      },
+      {
+        "source": 9,
+        "target": 62,
+        "type": "connection"
+      },
+      {
+        "source": 10,
+        "target": 11,
+        "type": "connection"
+      },
+      {
+        "source": 10,
+        "target": 19,
+        "type": "connection"
+      },
+      {
+        "source": 11,
+        "target": 12,
+        "type": "connection"
+      },
+      {
+        "source": 11,
+        "target": 38,
+        "type": "connection"
+      },
+      {
+        "source": 12,
+        "target": 4,
+        "type": "connection"
+      },
+      {
+        "source": 12,
+        "target": 15,
+        "type": "connection"
+      },
+      {
+        "source": 12,
+        "target": 70,
+        "type": "connection"
+      },
+      {
+        "source": 15,
+        "target": 16,
+        "type": "connection"
+      },
+      {
+        "source": 15,
+        "target": 17,
+        "type": "connection"
+      },
+      {
+        "source": 15,
+        "target": 18,
+        "type": "connection"
+      },
+      {
+        "source": 15,
+        "target": 20,
+        "type": "connection"
+      },
+      {
+        "source": 15,
+        "target": 36,
+        "type": "connection"
+      },
+      {
+        "source": 16,
+        "target": 17,
+        "type": "connection"
+      },
+      {
+        "source": 16,
+        "target": 18,
+        "type": "connection"
+      },
+      {
+        "source": 16,
+        "target": 20,
+        "type": "connection"
+      },
+      {
+        "source": 16,
+        "target": 39,
+        "type": "connection"
+      },
+      {
+        "source": 17,
+        "target": 23,
+        "type": "connection"
+      },
+      {
+        "source": 17,
+        "target": 25,
+        "type": "connection"
+      },
+      {
+        "source": 17,
+        "target": 24,
+        "type": "connection"
+      },
+      {
+        "source": 18,
+        "target": 19,
+        "type": "connection"
+      },
+      {
+        "source": 18,
+        "target": 20,
+        "type": "connection"
+      },
+      {
+        "source": 18,
+        "target": 51,
+        "type": "connection"
+      },
+      {
+        "source": 19,
+        "target": 27,
+        "type": "connection"
+      },
+      {
+        "source": 19,
+        "target": 29,
+        "type": "connection"
+      },
+      {
+        "source": 19,
+        "target": 30,
+        "type": "connection"
+      },
+      {
+        "source": 19,
+        "target": 20,
+        "type": "connection"
+      },
+      {
+        "source": 20,
+        "target": 24,
+        "type": "connection"
+      },
+      {
+        "source": 20,
+        "target": 27,
+        "type": "connection"
+      },
+      {
+        "source": 22,
+        "target": 23,
+        "type": "connection"
+      },
+      {
+        "source": 22,
+        "target": 17,
+        "type": "connection"
+      },
+      {
+        "source": 22,
+        "target": 21,
+        "type": "connection"
+      },
+      {
+        "source": 23,
+        "target": 24,
+        "type": "connection"
+      },
+      {
+        "source": 23,
+        "target": 25,
+        "type": "connection"
+      },
+      {
+        "source": 24,
+        "target": 25,
+        "type": "connection"
+      },
+      {
+        "source": 25,
+        "target": 20,
+        "type": "connection"
+      },
+      {
+        "source": 27,
+        "target": 26,
+        "type": "connection"
+      },
+      {
+        "source": 27,
+        "target": 28,
+        "type": "connection"
+      },
+      {
+        "source": 27,
+        "target": 29,
+        "type": "connection"
+      },
+      {
+        "source": 27,
+        "target": 30,
+        "type": "connection"
+      },
+      {
+        "source": 28,
+        "target": 29,
+        "type": "connection"
+      },
+      {
+        "source": 28,
+        "target": 4,
+        "type": "connection"
+      },
+      {
+        "source": 29,
+        "target": 30,
+        "type": "connection"
+      },
+      {
+        "source": 30,
+        "target": 26,
+        "type": "connection"
+      },
+      {
+        "source": 32,
+        "target": 31,
+        "type": "connection"
+      },
+      {
+        "source": 32,
+        "target": 33,
+        "type": "connection"
+      },
+      {
+        "source": 32,
+        "target": 27,
+        "type": "connection"
+      },
+      {
+        "source": 33,
+        "target": 31,
+        "type": "connection"
+      },
+      {
+        "source": 36,
+        "target": 37,
+        "type": "connection"
+      },
+      {
+        "source": 36,
+        "target": 34,
+        "type": "connection"
+      },
+      {
+        "source": 36,
+        "target": 35,
+        "type": "connection"
+      },
+      {
+        "source": 37,
+        "target": 34,
+        "type": "connection"
+      },
+      {
+        "source": 37,
+        "target": 42,
+        "type": "connection"
+      },
+      {
+        "source": 38,
+        "target": 34,
+        "type": "connection"
+      },
+      {
+        "source": 38,
+        "target": 35,
+        "type": "connection"
+      },
+      {
+        "source": 38,
+        "target": 50,
+        "type": "connection"
+      },
+      {
+        "source": 39,
+        "target": 34,
+        "type": "connection"
+      },
+      {
+        "source": 39,
+        "target": 35,
+        "type": "connection"
+      },
+      {
+        "source": 39,
+        "target": 53,
+        "type": "connection"
+      },
+      {
+        "source": 40,
+        "target": 34,
+        "type": "connection"
+      },
+      {
+        "source": 40,
+        "target": 35,
+        "type": "connection"
+      },
+      {
+        "source": 40,
+        "target": 42,
+        "type": "connection"
+      },
+      {
+        "source": 42,
+        "target": 36,
+        "type": "connection"
+      },
+      {
+        "source": 42,
+        "target": 43,
+        "type": "connection"
+      },
+      {
+        "source": 43,
+        "target": 45,
+        "type": "connection"
+      },
+      {
+        "source": 43,
+        "target": 50,
+        "type": "connection"
+      },
+      {
+        "source": 44,
+        "target": 42,
+        "type": "connection"
+      },
+      {
+        "source": 44,
+        "target": 72,
+        "type": "connection"
+      },
+      {
+        "source": 44,
+        "target": 73,
+        "type": "connection"
+      },
+      {
+        "source": 45,
+        "target": 42,
+        "type": "connection"
+      },
+      {
+        "source": 47,
+        "target": 42,
+        "type": "connection"
+      },
+      {
+        "source": 47,
+        "target": 48,
+        "type": "connection"
+      },
+      {
+        "source": 47,
+        "target": 15,
+        "type": "connection"
+      },
+      {
+        "source": 48,
+        "target": 42,
+        "type": "connection"
+      },
+      {
+        "source": 48,
+        "target": 36,
+        "type": "connection"
+      },
+      {
+        "source": 48,
+        "target": 37,
+        "type": "connection"
+      },
+      {
+        "source": 50,
+        "target": 42,
+        "type": "connection"
+      },
+      {
+        "source": 50,
+        "target": 52,
+        "type": "connection"
+      },
+      {
+        "source": 50,
+        "target": 39,
+        "type": "connection"
+      },
+      {
+        "source": 51,
+        "target": 50,
+        "type": "connection"
+      },
+      {
+        "source": 51,
+        "target": 19,
+        "type": "connection"
+      },
+      {
+        "source": 52,
+        "target": 53,
+        "type": "connection"
+      },
+      {
+        "source": 52,
+        "target": 54,
+        "type": "connection"
+      },
+      {
+        "source": 53,
+        "target": 50,
+        "type": "connection"
+      },
+      {
+        "source": 53,
+        "target": 17,
+        "type": "connection"
+      },
+      {
+        "source": 53,
+        "target": 54,
+        "type": "connection"
+      },
+      {
+        "source": 54,
+        "target": 50,
+        "type": "connection"
+      },
+      {
+        "source": 57,
+        "target": 58,
+        "type": "connection"
+      },
+      {
+        "source": 57,
+        "target": 59,
+        "type": "connection"
+      },
+      {
+        "source": 57,
+        "target": 62,
+        "type": "connection"
+      },
+      {
+        "source": 58,
+        "target": 63,
+        "type": "connection"
+      },
+      {
+        "source": 58,
+        "target": 67,
+        "type": "connection"
+      },
+      {
+        "source": 59,
+        "target": 60,
+        "type": "connection"
+      },
+      {
+        "source": 59,
+        "target": 65,
+        "type": "connection"
+      },
+      {
+        "source": 60,
+        "target": 12,
+        "type": "connection"
+      },
+      {
+        "source": 60,
+        "target": 57,
+        "type": "connection"
+      },
+      {
+        "source": 62,
+        "target": 61,
+        "type": "connection"
+      },
+      {
+        "source": 62,
+        "target": 63,
+        "type": "connection"
+      },
+      {
+        "source": 62,
+        "target": 64,
+        "type": "connection"
+      },
+      {
+        "source": 62,
+        "target": 65,
+        "type": "connection"
+      },
+      {
+        "source": 62,
+        "target": 58,
+        "type": "connection"
+      },
+      {
+        "source": 63,
+        "target": 64,
+        "type": "connection"
+      },
+      {
+        "source": 63,
+        "target": 67,
+        "type": "connection"
+      },
+      {
+        "source": 63,
+        "target": 42,
+        "type": "connection"
+      },
+      {
+        "source": 63,
+        "target": 40,
+        "type": "connection"
+      },
+      {
+        "source": 64,
+        "target": 67,
+        "type": "connection"
+      },
+      {
+        "source": 64,
+        "target": 68,
+        "type": "connection"
+      },
+      {
+        "source": 64,
+        "target": 40,
+        "type": "connection"
+      },
+      {
+        "source": 65,
+        "target": 45,
+        "type": "connection"
+      },
+      {
+        "source": 67,
+        "target": 23,
+        "type": "connection"
+      },
+      {
+        "source": 67,
+        "target": 68,
+        "type": "connection"
+      },
+      {
+        "source": 67,
+        "target": 69,
+        "type": "connection"
+      },
+      {
+        "source": 68,
+        "target": 69,
+        "type": "connection"
+      },
+      {
+        "source": 69,
+        "target": 42,
+        "type": "connection"
+      },
+      {
+        "source": 72,
+        "target": 73,
+        "type": "connection"
+      },
+      {
+        "source": 72,
+        "target": 4,
+        "type": "connection"
+      },
+      {
+        "source": 73,
+        "target": 75,
+        "type": "connection"
+      },
+      {
+        "source": 73,
+        "target": 4,
+        "type": "connection"
+      },
+      {
+        "source": 75,
+        "target": 76,
+        "type": "connection"
+      },
+      {
+        "source": 75,
+        "target": 77,
+        "type": "connection"
+      },
+      {
+        "source": 75,
+        "target": 72,
+        "type": "connection"
+      },
+      {
+        "source": 76,
+        "target": 77,
+        "type": "connection"
+      }
+    ]
+  }
+}

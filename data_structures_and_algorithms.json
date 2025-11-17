@@ -1,0 +1,276 @@
+{
+    "sections": [
+        {
+            "name": "Introduction and Algorithm Analysis",
+            "number": "1",
+            "topics": [
+                {
+                    "name": "Fundamentals of Algorithms",
+                    "number": "1.1",
+                    "concepts": [
+                        {
+                            "name": "What is an Algorithm?",
+                            "description": "Definition, properties (finiteness, definiteness, input, output, effectiveness)."
+                        },
+                        {
+                            "name": "Problem Solving with Algorithms",
+                            "description": "Steps: problem definition, algorithm design, implementation, testing, analysis."
+                        },
+                        {
+                            "name": "Pseudocode and Basic Control Structures",
+                            "description": "Writing clear algorithms using sequence, selection, and iteration."
+                        }
+                    ]
+                },
+                {
+                    "name": "Algorithm Analysis",
+                    "number": "1.2",
+                    "concepts": [
+                        {
+                            "name": "Asymptotic Notation",
+                            "description": "Big-O, Big-Omega, Big-Theta; defining upper, lower, and tight bounds."
+                        },
+                        {
+                            "name": "Time and Space Complexity",
+                            "description": "Analyzing worst-case, average-case, and best-case runtime and memory usage."
+                        },
+                        {
+                            "name": "Analyzing Iterative and Recursive Algorithms",
+                            "description": "Summation for loops; solving recurrence relations (e.g., Master Theorem) for recursion."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fundamental Data Structures",
+            "number": "2",
+            "topics": [
+                {
+                    "name": "Arrays and Linked Lists",
+                    "number": "2.1",
+                    "concepts": [
+                        {
+                            "name": "Arrays",
+                            "description": "Static and dynamic arrays, memory representation, access, insertion, deletion."
+                        },
+                        {
+                            "name": "Singly, Doubly, and Circular Linked Lists",
+                            "description": "Node structure, traversal, insertion, deletion; comparing advantages/disadvantages vs. arrays."
+                        }
+                    ]
+                },
+                {
+                    "name": "Stacks and Queues",
+                    "number": "2.2",
+                    "concepts": [
+                        {
+                            "name": "Stack ADT",
+                            "description": "LIFO principle, push, pop, peek; implementations using array and linked list."
+                        },
+                        {
+                            "name": "Queue ADT",
+                            "description": "FIFO principle, enqueue, dequeue; implementations (array, linked list)."
+                        },
+                        {
+                            "name": "Deque and Priority Queue",
+                            "description": "Double-ended queue; priority queue concept and simple implementations."
+                        }
+                    ]
+                },
+                {
+                    "name": "Hash Tables",
+                    "number": "2.3",
+                    "concepts": [
+                        {
+                            "name": "Hash Functions",
+                            "description": "Properties of a good hash function, common hash functions for integers/strings."
+                        },
+                        {
+                            "name": "Collision Resolution",
+                            "description": "Separate Chaining and Open Addressing (Linear Probing, Quadratic Probing, Double Hashing)."
+                        },
+                        {
+                            "name": "Time Complexity Analysis",
+                            "description": "Analyzing search, insert, delete under average and worst-case assumptions."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Recursion and Advanced Data Structures",
+            "number": "3",
+            "topics": [
+                {
+                    "name": "Recursion",
+                    "number": "3.1",
+                    "concepts": [
+                        {
+                            "name": "Principles of Recursion",
+                            "description": "Base case, recursive case, call stack, solving problems recursively."
+                        },
+                        {
+                            "name": "Tree and Graph Traversal Recursively",
+                            "description": "Applying recursion to traverse hierarchical structures like trees."
+                        },
+                        {
+                            "name": "Backtracking Algorithms",
+                            "description": "Solving problems like N-Queens, Sudoku by trying possibilities and undoing (backtracking) failures."
+                        }
+                    ]
+                },
+                {
+                    "name": "Trees",
+                    "number": "3.2",
+                    "concepts": [
+                        {
+                            "name": "Tree Terminology and Binary Trees",
+                            "description": "Root, node, leaf, height, depth; binary tree properties and traversals (in-order, pre-order, post-order)."
+                        },
+                        {
+                            "name": "Binary Search Trees (BST)",
+                            "description": "BST property, search, insertion, deletion; time complexity analysis."
+                        },
+                        {
+                            "name": "Balanced BSTs (AVL Trees)",
+                            "description": "Concept of balance, rotations (single, double) to maintain AVL property."
+                        }
+                    ]
+                },
+                {
+                    "name": "Heaps",
+                    "number": "3.3",
+                    "concepts": [
+                        {
+                            "name": "Binary Heap Structure",
+                            "description": "Complete binary tree, heap order property (min-heap, max-heap)."
+                        },
+                        {
+                            "name": "Heap Operations",
+                            "description": "Insert (bubble-up), extract-min/max (bubble-down), heapify."
+                        },
+                        {
+                            "name": "Applications of Heaps",
+                            "description": "Heap Sort algorithm, Priority Queue implementation."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Graph Algorithms",
+            "number": "4",
+            "topics": [
+                {
+                    "name": "Graph Fundamentals",
+                    "number": "4.1",
+                    "concepts": [
+                        {
+                            "name": "Graph Terminology and Representations",
+                            "description": "Vertices, edges, directed/undirected, weighted/unweighted; adjacency matrix and adjacency list."
+                        },
+                        {
+                            "name": "Graph Traversal Algorithms",
+                            "description": "Breadth-First Search (BFS) and Depth-First Search (DFS); applications and time complexity."
+                        }
+                    ]
+                },
+                {
+                    "name": "Shortest Path Problems",
+                    "number": "4.2",
+                    "concepts": [
+                        {
+                            "name": "Dijkstra's Algorithm",
+                            "description": "Finding shortest paths from a single source in weighted graphs (non-negative weights)."
+                        },
+                        {
+                            "name": "Bellman-Ford Algorithm",
+                            "description": "Finding shortest paths from a single source, can handle negative weight edges (detects negative cycles)."
+                        }
+                    ]
+                },
+                {
+                    "name": "Minimum Spanning Tree (MST)",
+                    "number": "4.3",
+                    "concepts": [
+                        {
+                            "name": "Kruskal's Algorithm",
+                            "description": "Greedy algorithm using a union-find (disjoint set) data structure to build MST."
+                        },
+                        {
+                            "name": "Prim's Algorithm",
+                            "description": "Greedy algorithm growing the MST from an arbitrary starting vertex, typically using a priority queue."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Algorithm Design Techniques",
+            "number": "5",
+            "topics": [
+                {
+                    "name": "Sorting Algorithms",
+                    "number": "5.1",
+                    "concepts": [
+                        {
+                            "name": "Elementary Sorts",
+                            "description": "Bubble Sort, Selection Sort, Insertion Sort; analysis and comparison."
+                        },
+                        {
+                            "name": "Divide-and-Conquer Sorts",
+                            "description": "Merge Sort (stable, O(n log n)) and Quick Sort (in-place, average-case O(n log n))."
+                        }
+                    ]
+                },
+                {
+                    "name": "Divide and Conquer",
+                    "number": "5.2",
+                    "concepts": [
+                        {
+                            "name": "Paradigm Overview",
+                            "description": "Divide problem into subproblems, conquer subproblems, combine results."
+                        },
+                        {
+                            "name": "Example Problems",
+                            "description": "Binary Search, finding maximum subarray sum, Strassen's matrix multiplication."
+                        }
+                    ]
+                },
+                {
+                    "name": "Greedy Algorithms",
+                    "number": "5.3",
+                    "concepts": [
+                        {
+                            "name": "Greedy Choice Property",
+                            "description": "Making the locally optimal choice at each stage with the hope of a global optimum."
+                        },
+                        {
+                            "name": "Example Problems",
+                            "description": "Activity Selection, Huffman Coding, Fractional Knapsack."
+                        }
+                    ]
+                },
+                {
+                    "name": "Dynamic Programming",
+                    "number": "5.4",
+                    "concepts": [
+                        {
+                            "name": "Principle of Optimality",
+                            "description": "Breaking problems into overlapping subproblems and storing results (memoization)."
+                        },
+                        {
+                            "name": "Tabulation vs Memoization",
+                            "description": "Bottom-up (table filling) and top-down (recursive with cache) approaches."
+                        },
+                        {
+                            "name": "Classic Problems",
+                            "description": "Fibonacci, 0/1 Knapsack, Longest Common Subsequence, Coin Change."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
